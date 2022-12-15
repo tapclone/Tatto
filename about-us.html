@@ -41,13 +41,21 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <style>
-        .aboutImageContainer{
-            width: 20rem;
-            height: 25rem;
-            background: url(images/EDIT.jpg);
-            background-size: cover;
-            border-radius: 10px;
+        .aboutContainer{
+            background: url(images/man-doing-tattoo-tattoo-salon.jpg);
         }
+        .aboutContainer p{
+            padding: 0 10%;
+        }
+        @media (max-width:500px) {
+            .aboutContainer{
+                background: url(images/EDIT.jpg);
+            }
+            .aboutContainer p{
+                padding: 0;
+            }
+        }
+        
         
         
     </style>
@@ -66,16 +74,16 @@
         <header id="header" class="header-section">
             <div class="container">
                 <nav class="navbar ">
-                    <a href="#" class="navbar-brand"><img src="images/Asset 3@300x.png" alt="Barbershop" style="width: 15rem;"></a>
+                    <a href="index.html" class="navbar-brand"><img src="images/Asset 3@300x.png" alt="Barbershop" style="width: 15rem;"></a>
                     <div class="d-flex menu-wrap align-items-center">
                         <div id="mainmenu" class="mainmenu">
                             <ul class="nav">
-                                <li><a data-scroll class="nav-link active" href="index.html">Home<span
+                                <li><a data-scroll  href="index.html">Home<span
                                             class="sr-only">(current)</span></a>
                                 </li>
                                 <li><a href="about-us.html">About</a>
                                 </li>
-                                <li><a href="">Services</a>
+                                <li><a href="#">Services</a>
                                     <ul>
                                         <li><a href="services.html">Tattooing</a></li>
                                         <li><a href="piercing-services.html">Piercing</a></li>
@@ -95,8 +103,43 @@
                 </nav>
             </div>
         </header>
-
+        
                     
+        <div class="aboutContainer" style="background-size: cover;position: relative;padding: 3rem 0;">
+            <div style="background-color: rgba(0,0,0,0.7);position: absolute;width: 100%;height: 100%;top: 0;left: 0;"></div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <h1 style="text-align: center; margin-top: 3rem;">About Us</h1>
+
+                        <p style="text-align: justify;color: white;">It is the true fervour of a bunch
+                            of tattoo enthusiasts that
+                            paved way to the inception of
+                            this remarkable venture. Over
+                            the last Ten years, Tattoo Art
+                            Studio has become the flagbearers of an exotic tattoo culture in city
+                            centre of the queen of Arabian sea.
+                            The tattoo and piercing experts that have
+                            been employed here are the best in town
+                            and they altogether have amassed experience
+                            of decades up their sleeves. Greatly professional
+                            inking and personalized styles implemented by our artists
+                            have made Tattoo Art studio a one-stop destination for tattoo and
+                            piercing aficionados. Maintaining the global standards intact, even
+                            amidst the extent of Covid 19 pandemic, we have gathered some
+                            happy customers we hold dear to for life. Here’s what some of them
+                            have to say about their inking experience at Tattoo Art Studio… </p>
+    
+                    </div>
+
+                </div>
+                
+                   
+
+                </div>
+            </div>
+        </div>
 
 
        

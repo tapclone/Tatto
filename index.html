@@ -76,6 +76,19 @@
         font-size: 1.5rem;
         margin-top: -2rem;
     }
+    .logo{
+        transition: all ease-out 0.5s;
+    }
+    .animateLogo{
+        transform: scale(10);
+        opacity: 0;
+    }
+    @media (max-width:600px) {
+        .logoContainer{
+            overflow: hidden;
+        }
+    }
+    
     
 </style>
 
@@ -93,16 +106,16 @@
     <header id="header" class="header-section">
         <div class="container">
             <nav class="navbar ">
-                <a href="#" class="navbar-brand"><img src="images/Asset 3@300x.png" alt="Barbershop" style="width: 15rem;"></a>
+                <a href="index.html" class="navbar-brand"><img src="images/Asset 3@300x.png" alt="Barbershop" style="width: 15rem;"></a>
                 <div class="d-flex menu-wrap align-items-center">
                     <div id="mainmenu" class="mainmenu">
                         <ul class="nav">
-                            <li><a data-scroll class="nav-link active" href="index.html">Home<span
+                            <li><a data-scroll  href="index.html">Home<span
                                         class="sr-only">(current)</span></a>
                             </li>
                             <li><a href="about-us.html">About</a>
                             </li>
-                            <li><a href="">Services</a>
+                            <li><a href="#">Services</a>
                                 <ul>
                                     <li><a href="services.html">Tattooing</a></li>
                                     <li><a href="piercing-services.html">Piercing</a></li>
@@ -132,7 +145,10 @@
                     <div class="slider_content">
                         <h3>Tattooing and Piercing.</h3>
                         <h1>Let Us Turn You<br>Into A Work Of Art</h1>
-                        <p>Lorem Ipsum has been the industry's standard dummy text <br> Lorem Ipsum has been the into</p>
+                        <p>The tattoo and piercing experts that have
+                            been employed here are the <br>  best in town 
+                            and they altogether have amassed experience <br>
+                            of decades up their sleeves.</p>
                         <a href="#" class="default_btn">Make Appointment</a>
                     </div>
                 </div>
@@ -143,7 +159,10 @@
                     <div class="slider_content">
                         <h3>Tattooing and Piercing.</h3>
                         <h1>Let Us Turn You<br>Into A Work Of Art</h1>
-                        <p>Lorem Ipsum has been the industry's standard dummy text <br> Lorem Ipsum has been the into</p>
+                        <p>The tattoo and piercing experts that have
+                            been employed here are the <br>  best in town 
+                            and they altogether have amassed experience <br>
+                            of decades up their sleeves.</p>
                         <a href="#" class="default_btn">Make Appointment</a>
                     </div>
                 </div>
@@ -154,7 +173,10 @@
                     <div class="slider_content">
                         <h3>Tattooing and Piercing.</h3>
                         <h1>Let Us Turn You<br>Into A Work Of Art</h1>
-                        <p>Lorem Ipsum has been the industry's standard dummy text <br> Lorem Ipsum has been the into</p>
+                        <p>The tattoo and piercing experts that have
+                            been employed here are the <br>  best in town 
+                            and they altogether have amassed experience <br>
+                            of decades up their sleeves.</p>
                         <a href="#" class="default_btn">Make Appointment</a>
                     </div>
                 </div>
@@ -167,7 +189,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 ">
-                    <div class="about_content align-center">
+                    <div class="about_content align-center logoContainer">
                         <h3 class="wow fadeInUp" data-wow-delay="100ms">Introducing</h3>
                         <h2 class="wow fadeInUp" data-wow-delay="200ms">Tatto Art Studio <br>Since 2012</h2>
                         <img class="wow fadeInUp logo" data-wow-delay="500ms" src="images/logo-04.png" alt="logo">
@@ -574,59 +596,7 @@
         </div>
     </section><!-- /.cta_section -->
 
-    <section class="blog-section bd-bottom padding">
-        <div class="container">
-            <div class="section-heading text-center mb-40 wow fadeInUp" data-wow-delay="300ms">
-                <h3>From Blog</h3>
-                <h2>A Good Newspaper Is A <br> Nation Talking To Itself</h2>
-            </div>
-            <!--/.section-heading-->
-            <div class="row blog-wrap">
-                <div class="col-lg-4 col-md-6 sm-padding wow fadeInUp" data-wow-delay="200ms">
-                    <div class="blog-item">
-                        <div class="blog-thumb">
-                            <img src="img/post-1.jpg" alt="post">
-                            <span class="category"><a href="#">interior</a></span>
-                        </div>
-                        <div class="blog-content">
-                            <h3><a href="#">Minimalist trending in modern architecture 2019</a></h3>
-                            <p>Building first evolved out dynamics between needs means available building materials
-                                attendant skills.</p>
-                            <a href="#" class="read-more">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
-                    <div class="blog-item">
-                        <div class="blog-thumb">
-                            <img src="img/post-2.jpg" alt="post">
-                            <span class="category"><a href="#">Architecture</a></span>
-                        </div>
-                        <div class="blog-content">
-                            <h3><a href="#">Terrace in the town yamazaki kentaro design workshop.</a></h3>
-                            <p>Building first evolved out dynamics between needs means available building materials
-                                attendant skills.</p>
-                            <a href="#" class="read-more">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 sm-padding wow fadeInUp" data-wow-delay="400ms">
-                    <div class="blog-item">
-                        <div class="blog-thumb">
-                            <img src="img/post-3.jpg" alt="post">
-                            <span class="category"><a href="#">Design</a></span>
-                        </div>
-                        <div class="blog-content">
-                            <h3><a href="#">W270 house são paulo arquitetos fabio jorge architeqture.</a></h3>
-                            <p>Building first evolved out dynamics between needs means available building materials
-                                attendant skills.</p>
-                            <a href="#" class="read-more">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   
     <!--/.blog-section-->
 
     <!-- <div class="sponsor_section bg-grey padding">
@@ -716,6 +686,7 @@
     </footer>
 
     <script >
+ 
         window.addEventListener('scroll',()=>{
             const items=document.querySelector(".intersect")
         const body=document.querySelector('body')
@@ -723,8 +694,11 @@
           
            const entry=enteries[0];
            if(entry.isIntersecting){
-            document.querySelector('.logo').style.transform=`scale(1.${window.scrollY*10})`
+            document.querySelector('.logo').classList.add('animateLogo')
+           }else{
+            document.querySelector('.logo').classList.remove('animateLogo')
            }
+           
            
         })
          observer.observe(items)

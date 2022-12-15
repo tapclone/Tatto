@@ -69,6 +69,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  border-radius: 10px;
 }
 
 .flip-card-front {
@@ -78,6 +79,7 @@
 .flip-card-front img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 .flip-card-back {
   background-color: rgb(147, 144, 144);
@@ -86,13 +88,26 @@
   padding: 10px;
 }
 .cta_section {
-    background-image: url(images/service-page-banner-2.jpg);
+    background: url(images/service-page-banner-2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 0 0;
-    background-size: cover;
-    padding: 200px 0;
+    background-position: center center;
+    background-size: contain;
+    padding:0 0 200px 0 ;
     width: 100%;
+}
+@media (max-width:600px) {
+    .cta_section{
+        background: url(images/pot1.jpg);
+        background-position: center center;
+        background-size: contain;
+        padding: 0;
+    }
+}
+@media (max-width: 767px){
+    .page_header {
+    height: 392px;
+}
 }
 
 
@@ -112,16 +127,16 @@
         <header id="header" class="header-section">
             <div class="container">
                 <nav class="navbar ">
-                    <a href="#" class="navbar-brand"><img src="images/Asset 3@300x.png" alt="Barbershop" style="width: 15rem;"></a>
+                    <a href="index.html" class="navbar-brand"><img src="images/Asset 3@300x.png" alt="Barbershop" style="width: 15rem;"></a>
                     <div class="d-flex menu-wrap align-items-center">
                         <div id="mainmenu" class="mainmenu">
                             <ul class="nav">
-                                <li><a data-scroll class="nav-link active" href="index.html">Home<span
+                                <li><a data-scroll  href="index.html">Home<span
                                             class="sr-only">(current)</span></a>
                                 </li>
                                 <li><a href="about-us.html">About</a>
                                 </li>
-                                <li><a href="">Services</a>
+                                <li><a href="#">Services</a>
                                     <ul>
                                         <li><a href="services.html">Tattooing</a></li>
                                         <li><a href="piercing-services.html">Piercing</a></li>
@@ -142,10 +157,10 @@
             </div>
         </header>
 		
-		<section class="page_header d-flex align-items-center" style="background: url(images/service-page-banner.png); background-size: cover;">
+		<section class="page_header d-flex align-items-center" style="background: url(images/land1.jpg); background-size: cover;background-position: center center;">
 		    <div class="container">
 		        <div class="section_heading text-center mb-40 wow fadeInUp" data-wow-delay="300ms">
-                   <h3>Tattoo Arts Studio </h3>
+                   <h3 style="color: rgb(248, 235, 179);">Tattoo Arts Studio </h3>
                    <h2>Piercing Services</h2>
                    
                 </div>
