@@ -2215,3 +2215,9 @@ blockquote span{
     background-color: #897666;
     color: #fff;
 }
+
+@media (max-width:550px) {
+    .logoTattoo{
+        margin-top: 15px ;
+    }
+}
