@@ -89,7 +89,7 @@
     	padding: 15px;
     }
     .main_slide{
-        height: 420px;
+        height: 485px;
     }
     .hero_section .hero_content h1,
     .slider_content h1{
@@ -104,10 +104,7 @@
     .page_header{
         height: 380px;
     }
-    .book_bg,
-    .about_img{
-        display: none;
-    }
+    
     .cta_section .cta_content h2 {
         font-size: 32px;
         line-height: 46px;

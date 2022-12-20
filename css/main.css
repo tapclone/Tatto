@@ -2221,3 +2221,14 @@ blockquote span{
         margin-top: 15px ;
     }
 }
+.logoAnimate{
+    animation: logoScale 0.5s  infinite alternate forwards;
+}
+@keyframes logoScale {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
