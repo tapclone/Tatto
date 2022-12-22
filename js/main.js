@@ -57,9 +57,8 @@
         smartSpeed: 500,
         items: 1,
         nav:true,
-        navText: ['<i class="arrow_carrot-left"></i>', '<i class="arrow_carrot-right"></i>']
+        navText: ['<img class="arrow_carrot-right" src="icone/left-arrow.svg">', '<img  src="icone/right-arrow.svg">']
     });
-
     $("#main-slider").on("translate.owl.carousel", function(){
         $(".main_slide .slider_content h3").removeClass("animated fadeInUp").css("opacity", "0");
         $(".main_slide .slider_content h1").removeClass("animated fadeInUp").css("opacity", "0");
