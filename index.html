@@ -78,17 +78,37 @@
     }
     .logo{
         transition: all ease-out 0.5s;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transform-origin: left;
+        
     }
     .animateLogo{
-        transform: scale(10);
-        opacity: 0;
+        transform: rotateX(360deg)
     }
         .logoContainer{
             overflow: hidden;
         }
+    .client_incrementor{
+        padding: 3.5rem;
+        width: 104.8%;
+        background-color: #222227;
+    }
+    .client_incrementor h3{
+        color: white;
+        font-weight: 600;
+    }
+    .client_incrementor h2{
+        color: white;
+    }
+    @media (max-width:575px) {
+        .incrementer{
+            margin-top: 1.5rem;
+            padding-left: 20%;
+        }
+    }
     
-    
-    
+  
     
 </style>
 
@@ -189,9 +209,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 ">
-                    <div class="about_content align-center">
+                    <div class="about_content align-center" >
                         <h3 class="wow fadeInUp" data-wow-delay="100ms">Introducing</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay="200ms">Tatto Art Studio <br>Since 2012</h2>
+                        <h2 class="wow fadeInUp" data-wow-delay="200ms" >Tatto Art Studio <br>Since 2012</h2>
                         <img class="wow fadeInUp logo" data-wow-delay="500ms" src="images/logo-04.png" alt="logo">
                         <p class="wow fadeInUp" data-wow-delay="600ms" style="text-align: justify;">It is the ture
                             fervour of a bunch of tattoo enthusiasts that paved way to the inception of this remarkable
@@ -493,6 +513,56 @@
         </div>
     </section> -->
 
+    <section class="client_incrementor row">
+        <div class="col-md-3 col-sm-6 incrementer " style="display: flex;">
+            <div class="col-xs-6" >
+                <img src="icone/costumer.svg" alt="">
+            </div>
+            <div class="col-xs-6" style="margin-left: 1rem;">
+                <h3>HAPPY  CLIENTS</h3>
+
+            <h2 class="clients">0</h2>
+            </div>
+            
+            
+            
+        </div>
+        <div class="col-md-3 col-sm-6 incrementer" style="display: flex;">
+            <div class="col-xs-6">
+                <img src="icone/champagne-glass.svg" alt="">
+            </div>
+            <div class="col-xs-6" style="margin-left: 1rem;">
+                <h3>YEARS IN BUSINESS</h3>
+            <h2 class="years">0</h2>
+            </div>
+            
+            
+        </div>
+        <div class="col-md-3 col-sm-6 incrementer" style="display: flex;" >
+            <div class="col-xs-6">
+                <img src="icone/doing-tattoo.svg" alt="" >
+            </div>
+            <div class="col-xs-6" style="margin-left: 1rem;">
+                <h3>ALL TATTOOS</h3>
+            <h2 class="tattoos">0 </h2>
+            </div>
+            
+            
+        </div>
+        <div class="col-md-3 col-sm-6 incrementer" style="display: flex;">
+            <div class="col-xs-6">
+                <img src="icone/piercings.svg" alt="" >
+            </div>
+            <div class="col-xs-6" style="margin-left: 1rem;">
+                <h3 >BODY PIERCING</h3>
+            <h2 class="piercings">0 </h2>
+            </div>
+            
+            
+            
+        </div>
+    </section>
+
     <section class="pricing_section bg-grey bd-bottom padding">
         <div class="container">
             <div class="section_heading text-center mb-40 wow fadeInUp" data-wow-delay="300ms">
@@ -564,7 +634,7 @@
         </div>
     </section><!-- /. pricing_section -->
 
-    <section class="cta_section padding" style="background-image: url(images/man-doing-tattoo-tattoo-salon.jpg);position: relative; background-size:cover;">
+    <section class="cta_section padding" style="background-image: url(images/man-doing-tattoo-tattoo-salon-min.jpg);position: relative; background-size:cover;">
         <div style="position: absolute;width: 100%;height: 100%; background-color: rgba(0, 0, 0,0.5);top: 0;left: 0;"></div>
         <div class="container">
             <div class="display-table">
@@ -669,10 +739,62 @@
     </footer>
 
     <script >
+        function increment(){
+            const clients=document.querySelector('.clients')
+            const years=document.querySelector('.years')
+            const tattoos=document.querySelector('.tattoos')
+            const piercings=document.querySelector('.piercings')
+
+            var i=1;
+            var intervel=setInterval(()=>{
+                clients.innerHTML=i;
+                i+=1;
+                if(i>1000){
+                    clearInterval(intervel)
+                }
+            },0.5)
+
+            var j=1;
+            var intervelyear=setInterval(()=>{
+                years.innerHTML=j;
+                j+=1;
+                if(j>15){
+                    clearInterval(intervelyear)
+                }
+            },300)
+             var k=1;
+             var intervelTattoo=setInterval(()=>{
+                tattoos.innerHTML=k;
+                k+=1;
+                if(k>1400){
+                    clearInterval(intervelTattoo)
+                }
+             },0.1)
+
+             var z=1;
+             var intervelPiercing=setInterval(()=>{
+                piercings.innerHTML=z;
+                z+=1;
+                if(z>500){
+                    clearInterval(intervelPiercing)
+                }
+             },10)
+          
+        }
+
+            const item=document.querySelector('.client_incrementor')
+            const observe=new IntersectionObserver((enteriez)=>{
+                const entryy=enteriez[0];
+                if(entryy.isIntersecting){
+                    increment()
+                    observe.unobserve(item)
+                }
+            })
+            observe.observe(item)
+
  
         window.addEventListener('scroll',()=>{
             const items=document.querySelector(".intersect")
-        const body=document.querySelector('body')
         const observer=new IntersectionObserver((enteries)=>{
           
            const entry=enteries[0];

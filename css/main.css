@@ -2235,3 +2235,8 @@ blockquote span{
         transform: scale(1.2);
     }
 }
+.client_incrementor{
+    width: 100%;
+    height: 20%;
+    background-color: #111;
+}
