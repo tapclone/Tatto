@@ -68,11 +68,11 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <div id='preloader'  style="background-color: black;">
-            <div class='loader' >
-                <img class="logoAnimate" src="images/logo-03 (1).png" width="100" alt="">
-            </div>
-        </div><!-- Preloader -->
+        <div class="preLoader" style="display: flex;align-items: center;justify-content: center;width: 100%;height: 100vh;background-color: black;position: fixed;top: 0;left: 0;z-index: 1000;">
+            <img  src="images/tatoo gif.gif" style="width: 20rem;" alt="">
+    </div>
+    <!-- Preloader -->
+<main class="mainBody" style="overflow: hidden;height: 0px;">
         
         <header id="header" class="header-section">
             <div class="container" style="max-width: 1077px;">
@@ -207,6 +207,17 @@
 
        
 		<a data-scroll href="#header" id="scroll-to-top"><img src="icone/up-arrow.svg" alt=""></a>
+        </main>
+
+        <script>
+            const loader=document.querySelector('.preLoader')
+         const main=document.querySelector('.mainBody')
+        setTimeout(()=>{
+            main.style.height='fit-content'
+            loader.style.display='none'
+        },3000)
+            
+        </script>
 	
 		<!-- jQuery Lib -->
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>

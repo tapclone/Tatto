@@ -1,6 +1,9 @@
 /*
 	BarberShop Theme Scripts
 */
+// loader. ...loader.........
+
+
 
 (function($){ "use strict";
              

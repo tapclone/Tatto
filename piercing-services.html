@@ -2,9 +2,11 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Tattoo Arts Studio">
     <meta name="author" content="DynamicLayers">
@@ -13,343 +15,355 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="images/logo-03 (1).png">
 
-        <!-- Elegant Font Icons CSS -->
-        <link rel="stylesheet" href="css/elegant-font-icons.css">
-        <!-- Elegant Line Icons CSS -->
-        <link rel="stylesheet" href="css/elegant-line-icons.css">
-        <!-- Themify Icon CSS -->
-        <link rel="stylesheet" href="css/themify-icons.css">
-        <!-- Barber Icons CSS -->
-        <link rel="stylesheet" href="css/barber-icons.css">
-		<!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- animate CSS -->
-        <link rel="stylesheet" href="css/animate.min.css">
-		<!-- Venobox CSS -->
-        <link rel="stylesheet" href="css/venobox/venobox.css">
-        <!-- Nice Select CSS -->
-        <link rel="stylesheet" href="css/nice-select.css">
-		<!-- OWL-Carousel CSS -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <!-- Slick Nav CSS -->
-        <link rel="stylesheet" href="css/slicknav.min.css">
-		<!-- Main CSS -->
-        <link rel="stylesheet" href="css/main.css">
-		<!-- Responsive CSS -->
-        <link rel="stylesheet" href="css/responsive.css">
+    <!-- Elegant Font Icons CSS -->
+    <link rel="stylesheet" href="css/elegant-font-icons.css">
+    <!-- Elegant Line Icons CSS -->
+    <link rel="stylesheet" href="css/elegant-line-icons.css">
+    <!-- Themify Icon CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Barber Icons CSS -->
+    <link rel="stylesheet" href="css/barber-icons.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Venobox CSS -->
+    <link rel="stylesheet" href="css/venobox/venobox.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- OWL-Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!-- Slick Nav CSS -->
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
 
-    <style>
-.flip-card {
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; 
-}
+<style>
+    .flip-card {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
+    }
 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
 
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-  border-radius: 10px;
-}
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        /* Safari */
+        backface-visibility: hidden;
+        border-radius: 10px;
+    }
 
-.flip-card-front {
-  background-color: rgb(255, 255, 255);
-  color: black;
-}
-.flip-card-front img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-.flip-card-back {
-  background-color: #222227;
-  color: white;
-  transform: rotateY(180deg);
-  padding: 10px;
-}
-.flip-card-back h3{
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-.flip-card-back p{
-  text-align: justify;
-  font-size: 1rem;
-  padding: 0 1.5rem;
-  font-weight: lighter;
-}
-.cta_section {
-    background: url(images/service-page-banner-2.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: contain;
-    padding:0 0 200px 0 ;
-    width: 100%;
-}
-@media (max-width:600px) {
-    .cta_section{
-        background: url(images/pot1.jpg);
+    .flip-card-front {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+
+    .flip-card-front img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .flip-card-back {
+        background-color: #222227;
+        color: white;
+        transform: rotateY(180deg);
+        padding: 10px;
+    }
+
+    .flip-card-back h3 {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .flip-card-back p {
+        text-align: justify;
+        font-size: 1rem;
+        padding: 0 1.5rem;
+        font-weight: lighter;
+    }
+
+    .cta_section {
+        background: url(images/service-page-banner-2.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-position: center center;
         background-size: contain;
-        padding: 0;
+        padding: 0 0 200px 0;
+        width: 100%;
     }
-}
-@media (max-width: 767px){
-    .page_header {
-    height: 392px;
-}
-}
 
+    @media (max-width:600px) {
+        .cta_section {
+            background: url(images/pot1.jpg);
+            background-position: center center;
+            background-size: contain;
+            padding: 0;
+        }
+    }
 
+    @media (max-width: 767px) {
+        .page_header {
+            height: 392px;
+        }
+    }
+</style>
 
-    </style>
-    <body>
-        <!--[if lt IE 8]>
+<body>
+    <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <div id='preloader' style="background-color: black;">
-            <div class='loader' >
-                <img class="logoAnimate" src="images/logo-03 (1).png" width="80" alt="">
-            </div>
-        </div><!-- Preloader -->
-        
-        <header id="header" class="header-section">
-            <div class="container" style="max-width: 1077px;">
-                <nav class="navbar ">
-                    <a href="index.html" class="navbar-brand"><img class="logoTattoo" src="images/Asset 3@300x.png" alt="" style="width: 15rem;"></a>
-                    <div class="d-flex menu-wrap align-items-center" >
-                        <div id="mainmenu" class="mainmenu">
-                            <ul class="nav">
-                                <li><a data-scroll  href="index.html">Home<span
-                                            class="sr-only">(current)</span></a>
-                                </li>
-                                <li><a href="about-us.html">About</a>
-                                </li>
-                                <li><a href="#">Services</a>
-                                    <ul>
-                                        <li><a href="services.html">Tattooing</a></li>
-                                        <li><a href="piercing-services.html">Piercing</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="courses.html">Courses</a>
-                                    
-                                </li>
-                                
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-btn" style="display: flex;align-items: center;">
-                            <a href="https://wa.me/9895317474" class="menu-btn">Make Appointment</a>
-                            <span style="margin-left: 1rem;" ><a href="https://instagram.com/christy_tattoo?igshid=Yzg5MTU1MDY="><img src="icone/instagram.svg" alt="" style="width: 2rem;"></a></span>
-                   
-                        </div>
-                        
+
+        <div class="preLoader"
+        style="display: flex;align-items: center;justify-content: center;width: 100%;height: 100vh;background-color: black;position: fixed;top: 0;left: 0;z-index: 1000;">
+        <img src="images/tatoo gif.gif" style="width: 20rem;" alt="">
+      </div>
+    
+    
+      <main class="mainBody" style="overflow: hidden;height: 0px;">
+    <header id="header" class="header-section">
+        <div class="container" style="max-width: 1077px;">
+            <nav class="navbar ">
+                <a href="index.html" class="navbar-brand"><img class="logoTattoo" src="images/Asset 3@300x.png" alt=""
+                        style="width: 15rem;"></a>
+                <div class="d-flex menu-wrap align-items-center">
+                    <div id="mainmenu" class="mainmenu">
+                        <ul class="nav">
+                            <li><a data-scroll href="index.html">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li><a href="about-us.html">About</a>
+                            </li>
+                            <li><a href="#">Services</a>
+                                <ul>
+                                    <li><a href="services.html">Tattooing</a></li>
+                                    <li><a href="piercing-services.html">Piercing</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="courses.html">Courses</a>
+
+                            </li>
+
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
-                </nav>
-            </div>
-        </header>
-		
-		<section class="page_header d-flex align-items-center" style="background: url(images/land1.jpg); background-size: cover;background-position: center center;height: 100vh;">
-		    <div class="container">
-		        <div class="section_heading text-center mb-40 wow fadeInUp" data-wow-delay="300ms">
-                   <h3 style="color: rgb(248, 235, 179);">Tattoo Arts Studio </h3>
-                   <h2>Piercing Services</h2>
-                   
+                    <div class="header-btn" style="display: flex;align-items: center;">
+                        <a href="https://wa.me/9895317474" class="menu-btn">Make Appointment</a>
+                        <span style="margin-left: 1rem;"><a
+                                href="https://instagram.com/christy_tattoo?igshid=Yzg5MTU1MDY="><img
+                                    src="icone/instagram.svg" alt="" style="width: 2rem;"></a></span>
+
+                    </div>
+
                 </div>
-		    </div>
-		</section><!--/. page_header -->
-       
-        <section >
-            <div class="container" style=" padding: 2rem 2rem;">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp " data-wow-delay="200ms" style="width: 18rem; height: 20rem; margin-top: 1rem;">
-                        <!-- <div class="service_box">
+            </nav>
+        </div>
+    </header>
+
+    <section class="page_header d-flex align-items-center"
+        style="background: url(images/land1.jpg); background-size: cover;background-position: center center;height: 100vh;">
+        <div class="container">
+            <div class="section_heading text-center mb-40 wow fadeInUp" data-wow-delay="300ms">
+                <h3 style="color: rgb(248, 235, 179);">Tattoo Arts Studio </h3>
+                <h2>Piercing Services</h2>
+
+            </div>
+        </div>
+    </section><!--/. page_header -->
+
+    <section>
+        <div class="container" style=" padding: 2rem 2rem;">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp " data-wow-delay="200ms"
+                    style="width: 18rem; height: 20rem; margin-top: 1rem;">
+                    <!-- <div class="service_box">
                             <i class="bs bs-scissors-1"></i>
                             <h3>Haircut Styles</h3>
                             <p>Barber is a person whose occupation is mainly to cut dress style.</p>
                         </div> -->
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                              <div class="flip-card-front">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
                                 <img src="images/lip-piercing.webp" alt="Avatar">
-                              </div>
-                              <div class="flip-card-back">
+                            </div>
+                            <div class="flip-card-back">
                                 <img src="icone/piercing.svg" alt="" style="margin-bottom: 10px;">
                                 <h3 style="color: white;">Lip Piercing</h3>
                                 <p>You can get your Lip or the surrounding area pierced.</p>
 
-                              </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp" data-wow-delay="200ms" style="width: 18rem; height: 20rem;  margin-top: 1rem;">
-                        <!-- <div class="service_box">
+                <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp" data-wow-delay="200ms"
+                    style="width: 18rem; height: 20rem;  margin-top: 1rem;">
+                    <!-- <div class="service_box">
                             <i class="bs bs-scissors-1"></i>
                             <h3>Haircut Styles</h3>
                             <p>Barber is a person whose occupation is mainly to cut dress style.</p>
                         </div> -->
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                              <div class="flip-card-front">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
                                 <img src="images/septum-piercing.webp" alt="Avatar">
-                              </div>
-                              <div class="flip-card-back">
+                            </div>
+                            <div class="flip-card-back">
                                 <img src="icone/septum.svg" alt="" style="margin-bottom: 10px;">
                                 <h3 style="color: white;">Septum Piercing</h3>
-                                <p>This piercing we do runs through your septum, the thin wall of cartilage separating your nostrils.  </p>
+                                <p>This piercing we do runs through your septum, the thin wall of cartilage separating
+                                    your nostrils. </p>
 
-                              </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp" data-wow-delay="200ms" style="width: 18rem; height: 20rem;  margin-top: 1rem;">
-                        <!-- <div class="service_box">
+                <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp" data-wow-delay="200ms"
+                    style="width: 18rem; height: 20rem;  margin-top: 1rem;">
+                    <!-- <div class="service_box">
                             <i class="bs bs-scissors-1"></i>
                             <h3>Haircut Styles</h3>
                             <p>Barber is a person whose occupation is mainly to cut dress style.</p>
                         </div> -->
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                              <div class="flip-card-front">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
                                 <img src="images/nostril-piercing.jpg" alt="Avatar">
-                              </div>
-                              <div class="flip-card-back">
+                            </div>
+                            <div class="flip-card-back">
                                 <img src="icone/nose.svg" alt="" style="margin-bottom: 10px;">
                                 <h3 style="color: white;">Nostrill Piercing</h3>
-                                <p>We do nostrill piercing that goes through the soft cartilage that surrounds the outside of the nasal passages.</p>
+                                <p>We do nostrill piercing that goes through the soft cartilage that surrounds the
+                                    outside of the nasal passages.</p>
 
-                              </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp" data-wow-delay="200ms" style="width: 18rem; height: 20rem;  margin-top: 1rem;">
-                        <!-- <div class="service_box">
+                <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp" data-wow-delay="200ms"
+                    style="width: 18rem; height: 20rem;  margin-top: 1rem;">
+                    <!-- <div class="service_box">
                             <i class="bs bs-scissors-1"></i>
                             <h3>Haircut Styles</h3>
                             <p>Barber is a person whose occupation is mainly to cut dress style.</p>
                         </div> -->
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                              <div class="flip-card-front">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
                                 <img src="images/earlob-piercing.jpg" alt="Avatar">
-                              </div>
-                              <div class="flip-card-back">
+                            </div>
+                            <div class="flip-card-back">
                                 <img src="icone/round-earrings.svg" alt="" style="margin-bottom: 10px;">
                                 <h3 style="color: white;">Earlobe Piercing</h3>
-                                <p>We do ear piercings, or lobes piercings, in which we typically take the stem through the fleshy lower part of the ear.</p>
+                                <p>We do ear piercings, or lobes piercings, in which we typically take the stem through
+                                    the fleshy lower part of the ear.</p>
 
-                              </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp" data-wow-delay="200ms" style="width: 18rem; height: 20rem;  margin-top: 1rem;">
-                        <!-- <div class="service_box">
+                <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp" data-wow-delay="200ms"
+                    style="width: 18rem; height: 20rem;  margin-top: 1rem;">
+                    <!-- <div class="service_box">
                             <i class="bs bs-scissors-1"></i>
                             <h3>Haircut Styles</h3>
                             <p>Barber is a person whose occupation is mainly to cut dress style.</p>
                         </div> -->
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                              <div class="flip-card-front">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
                                 <img src="images/naval-piercing.jpg" alt="Avatar">
-                              </div>
-                              <div class="flip-card-back">
+                            </div>
+                            <div class="flip-card-back">
                                 <img src="icone/naval.svg" alt="" style="margin-bottom: 10px;">
                                 <h3 style="color: white;">Naval/Belly Button Piercing</h3>
-                                <p>We do this practice by piercing a woman's belly and naval region. It's mainly preferred to increase attraction and also looks cute.</p>
+                                <p>We do this practice by piercing a woman's belly and naval region. It's mainly
+                                    preferred to increase attraction and also looks cute.</p>
 
-                              </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
+                </div>
 
-                    
-                    <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp" data-wow-delay="200ms" style="width: 18rem; height: 20rem;  margin-top: 1rem;">
-                        <!-- <div class="service_box">
+
+                <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp" data-wow-delay="200ms"
+                    style="width: 18rem; height: 20rem;  margin-top: 1rem;">
+                    <!-- <div class="service_box">
                             <i class="bs bs-scissors-1"></i>
                             <h3>Haircut Styles</h3>
                             <p>Barber is a person whose occupation is mainly to cut dress style.</p>
                         </div> -->
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                              <div class="flip-card-front">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
                                 <img src="images/lip-colouring.jpg" alt="Avatar">
-                              </div>
-                              <div class="flip-card-back">
+                            </div>
+                            <div class="flip-card-back">
                                 <img src="icone/lip-balm.svg" alt="" style="margin-bottom: 10px;">
                                 <h3 style="color: white;">Lip Colouring</h3>
-                                <p>Through this technique, we primarily add color to the lips without looking artificial. </p>
+                                <p>Through this technique, we primarily add color to the lips without looking
+                                    artificial. </p>
 
-                              </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp" data-wow-delay="200ms" style="width: 18rem; height: 20rem;  margin-top: 1rem;">
-                        <!-- <div class="service_box">
+                <div class="col-md-4 col-sm-6 col-lg-3 col-xl-3 col-12 wow fadeInUp" data-wow-delay="200ms"
+                    style="width: 18rem; height: 20rem;  margin-top: 1rem;">
+                    <!-- <div class="service_box">
                             <i class="bs bs-scissors-1"></i>
                             <h3>Haircut Styles</h3>
                             <p>Barber is a person whose occupation is mainly to cut dress style.</p>
                         </div> -->
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                              <div class="flip-card-front">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
                                 <img src="images/eyebrow.JPG" alt="Avatar">
-                              </div>
-                              <div class="flip-card-back">
+                            </div>
+                            <div class="flip-card-back">
                                 <img src="icone/eyebrow-n.svg" alt="" style="margin-bottom: 10px;">
                                 <h3 style="color: white;">Eyebrow micro balding</h3>
-                                <p>We involve using a needle to place micro pigments beneath the upper layers of your skin.</p>
+                                <p>We involve using a needle to place micro pigments beneath the upper layers of your
+                                    skin.</p>
 
-                              </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
-                    
                 </div>
-                
+
             </div>
-        </section><!--/. service_section -->
-        
-        <section class="cta_section padding" >
-           <div class="container">
-               <div class="display-table">
-                   <div class="table-cel">
-                       <div class="cta_content align-center wow fadeInUp" data-wow-delay="300ms">
-                           <h2>Making You Look Good <br> Is In Our Haritage.</h2>
-                           <p>Barber is a person whose occupation is mainly to cut dress groom <br>style and shave men's and boys hair.</p>
-                           <a href="https://wa.me/9895187474" class="default_btn">Make Appointment</a>
-                       </div>
-                   </div>
-               </div>
-           </div>
- 
-         
+
+        </div>
+    </section><!--/. service_section -->
+
+   
+
         <!-- <div class="sponsor_section bg-grey padding">
             <div class="container">
                 <ul id="sponsor_carousel" class="sponsor_items owl-carousel">
@@ -380,21 +394,24 @@
                 </ul>
             </div>
         </div> -->
-		
-		<section class="widget_section padding">
+
+        <section class="widget_section padding">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 sm-padding">
                         <div class="footer_widget ">
                             <img class="mb-15" src="images/Asset 3@300x.png" alt="Brand" style="width: 13rem;">
-                            <p style="text-align: justify;">We are located in Edapally, Ernakulam, Kerala. We offer a welcoming environment for people who seek body piercings and bespoke tattoo designs in a tidy and cosy setting. </p>
-                            
+                            <p style="text-align: justify;">We are located in Edapally, Ernakulam, Kerala. We offer a
+                                welcoming environment for people who seek body piercings and bespoke tattoo designs in a
+                                tidy and cosy setting. </p>
+
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 sm-padding">
                         <div class="footer_widget">
                             <h3>Address</h3>
-                            <p style="text-align: justify;">Metro Pillar 455, Near, Changampuzha Park, Bank Junction, Mamangalam, Edappally, Kochi, Kerala 682024</p>
+                            <p style="text-align: justify;">Metro Pillar 455, Near, Changampuzha Park, Bank Junction,
+                                Mamangalam, Edappally, Kochi, Kerala 682024</p>
                             <p>Hello@dynamiclayers.net <br>098951 87474</p>
                         </div>
                     </div>
@@ -404,11 +421,11 @@
                             <ul class="opening_time">
                                 <li>Monday-Saturday 10:00am-08:00pm</li>
                                 <li>Sunday 11.00am – 06.00pm</li>
-                                
+
                             </ul>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -416,7 +433,7 @@
         <footer class="footer_section">
             <div class="container">
                 <div class="row">
-                    
+
                     <div class="col-md-6 xs-padding">
                         <ul class="footer_social">
                             <li><a href="index.html">Home</a></li>
@@ -429,39 +446,49 @@
                 </div>
             </div>
         </footer>
-        
-		<a data-scroll href="#header" id="scroll-to-top"><img src="icone/up-arrow.svg" alt=""></a>
-	
-		<!-- jQuery Lib -->
-		<script src="js/vendor/jquery-1.12.4.min.js"></script>
-		<!-- Bootstrap JS -->
-		<script src="js/vendor/bootstrap.min.js"></script>
+
+        <a data-scroll href="#header" id="scroll-to-top"><img src="icone/up-arrow.svg" alt=""></a>
+
+    </main>
+    <script>
+        const loader=document.querySelector('.preLoader')
+         const main=document.querySelector('.mainBody')
+        setTimeout(()=>{
+            main.style.height='fit-content'
+            loader.style.display='none'
+        },3000)
+    </script>
+        <!-- jQuery Lib -->
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="js/vendor/bootstrap.min.js"></script>
         <!-- Imagesloaded JS -->
         <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
-		<!-- OWL-Carousel JS -->
-		<script src="js/vendor/owl.carousel.min.js"></script>
-		<!-- isotope JS -->
-		<script src="js/vendor/jquery.isotope.v3.0.2.js"></script>
-		<!-- Smooth Scroll JS -->
-		<script src="js/vendor/smooth-scroll.min.js"></script>
-		<!-- venobox JS -->
-		<script src="js/vendor/venobox.min.js"></script>
+        <!-- OWL-Carousel JS -->
+        <script src="js/vendor/owl.carousel.min.js"></script>
+        <!-- isotope JS -->
+        <script src="js/vendor/jquery.isotope.v3.0.2.js"></script>
+        <!-- Smooth Scroll JS -->
+        <script src="js/vendor/smooth-scroll.min.js"></script>
+        <!-- venobox JS -->
+        <script src="js/vendor/venobox.min.js"></script>
         <!-- ajaxchimp JS -->
         <script src="js/vendor/jquery.ajaxchimp.min.js"></script>
         <!--Slicknav-->
-		<script src="js/vendor/jquery.slicknav.min.js"></script>
-		<!--Nice Select-->
-		<script src="js/vendor/jquery.nice-select.min.js"></script>
+        <script src="js/vendor/jquery.slicknav.min.js"></script>
+        <!--Nice Select-->
+        <script src="js/vendor/jquery.nice-select.min.js"></script>
         <!-- YTPlayer JS -->
-	    <script src="js/vendor/jquery.mb.YTPlayer.min.js"></script>
-	    <!-- Wow JS -->
-	    <script src="js/vendor/wow.min.js"></script>
-		<!-- Contact JS -->
-		<script src="js/contact.js"></script>
-		<!-- Appointment JS -->
-		<script src="js/appointment.js"></script>
-		<!-- Main JS -->
-		<script src="js/main.js"></script>
-   
-    </body>
+        <script src="js/vendor/jquery.mb.YTPlayer.min.js"></script>
+        <!-- Wow JS -->
+        <script src="js/vendor/wow.min.js"></script>
+        <!-- Contact JS -->
+        <script src="js/contact.js"></script>
+        <!-- Appointment JS -->
+        <script src="js/appointment.js"></script>
+        <!-- Main JS -->
+        <script src="js/main.js"></script>
+
+</body>
+
 </html>
